@@ -16,9 +16,10 @@
 
     <link rel="stylesheet" href="assets/css/about.css">
     <style>
-        body{
+        body {
             overflow-x: hidden;
         }
+
         .limg {
             position: absolute;
             left: 0;
@@ -95,6 +96,21 @@
             </ul>
         </div>
     </header>
+    <style>
+        /* .aboutKami_wrap .banner .row{
+            width: 100%;
+            position: absolute;
+            top:0;
+            display: flex;
+        }
+        .aboutKami_wrap .banner .row .message{
+            flex: 1;
+        }
+        .aboutKami_wrap .banner .row .right{
+            width: 30%;
+            background-color: #003EAF;
+        }  */
+    </style>
     <section class="aboutKami_wrap">
         <div class="banner">
             <div class="message">
@@ -103,13 +119,11 @@
                 <h3>选择开米 选择健康</h3>
                 <p>开米产品的生产和使用过程节约资源，省水省电，对环境无污染，对人体安全性高，为节能无公害型绿色洗涤用品。</p>
             </div>
-
             <div class="limg">
                 <div class="lcolor">
                     <div class="arrow-left"></div>
                 </div>
             </div>
-
         </div>
 
         <div class="aboutKami_main">
@@ -382,7 +396,11 @@
 
             var w = window.outerWidth;
             setTimeout(function () {
-                $(".limg").animate({"left": -w - 400}, 5000, function () {$(".limg").hide();});
+                $(".limg").animate({
+                    "left": -w - 400
+                }, 5000, function () {
+                    $(".limg").hide();
+                });
             }, 1000);
 
         })
