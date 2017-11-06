@@ -53,8 +53,21 @@
             line-height: 0px;
         }
 
-        .banner{
+        .banner {
             visibility: hidden;
+        }
+
+        .message {
+            visibility: hidden;
+        }
+
+
+        .animated {
+            animation-duration: 5s;
+        }
+
+        .animated1 {
+            animation-duration: 3s;
         }
     </style>
 </head>
@@ -112,7 +125,7 @@
                 <p>开米产品的生产和使用过程节约资源，省水省电，对环境无污染，对人体安全性高，为节能无公害型绿色洗涤用品。</p>
             </div>
         </div>
-        <div class="limg slideInDown animated">
+        <div class="limg slideInDown animated animated1">
             <div class="lcolor">
                 <div class="arrow-left">
                 </div>
@@ -384,12 +397,17 @@
             var w = window.outerWidth;
             var lw = (-w - 400) + "px";
             setTimeout(function () {
+                $(".banner").css("visibility", "unset");
                 $(".limg").animate({
                     "left": -w - 400
                 }, 5000, function () {
                     $(".limg").hide();
                 });
-            }, 2000);
+            }, 3000);
+
+            setTimeout(function () {
+                $(".message").css("visibility", "unset").addClass("fadeIn").addClass("animated");
+            }, 7000);
 
             setTimeout(function () {
                 $('.bubble').circleMagic({
@@ -399,14 +417,11 @@
                     color: '#fff',
                     clearOffset: .5
                 });
-            },6000)
-            
+            }, 8000)
+
             // setTimeout(function(){
             //     $('.message').css()
             // },5001)
-        })
-            }, 6000);
-
         });
     </script>
 </body>
