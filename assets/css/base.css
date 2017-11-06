@@ -275,6 +275,7 @@ a:active {}
 body {
   font-family: 'FZLTHJW';
   background-color: #f0f2f5;
+  min-width: 1200px;
 }
 
 input,

@@ -106,7 +106,7 @@ body {
 
 .detail .dleft {
     float: left;
-    width: 12%;
+    width: 14%;
     margin-left: 104px;
     margin-top: 100px;
     font-size: 16px;
@@ -127,6 +127,7 @@ body {
 
 .dleft .dother {
     margin-top: 74px;
+    padding-bottom: 30px;
 }
 
 .dleft .dother img {
@@ -146,6 +147,9 @@ body {
     width: 25%;
 }
 
+.dright .dprod table{
+    cursor: pointer;
+}
 .dright .dprod table td {
     line-height: 28px;
     font-size: 14px;
@@ -158,9 +162,11 @@ body {
 
 .dprod table img {
     width: 100%;
+    max-width: 281px;
+    max-height: 281px;
 }
 
-.detail:nth-child(odd) .dprod table:hover {
+.detail .dprod table:hover {
     background: linear-gradient(to top, #CFECFC, #F1FAFE);
 }
 
