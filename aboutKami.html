@@ -53,8 +53,16 @@
             line-height: 0px;
         }
 
-        .banner{
+        .banner {
             visibility: hidden;
+        }
+
+        .message{
+            visibility: hidden;
+        }
+
+        .animated {
+            animation-duration: 4s;
         }
     </style>
 </head>
@@ -384,12 +392,17 @@
             var w = window.outerWidth;
             var lw = (-w - 400) + "px";
             setTimeout(function () {
+                $(".banner").css("visibility", "unset");
                 $(".limg").animate({
                     "left": -w - 400
                 }, 5000, function () {
                     $(".limg").hide();
                 });
-            }, 2000);
+            }, 4000);
+
+            setTimeout(function () {
+                $(".message").css("visibility","unset").addClass("fadeIn").addClass("animated");
+            }, 7000);
 
             setTimeout(function () {
                 $('.bubble').circleMagic({
@@ -399,14 +412,11 @@
                     color: '#fff',
                     clearOffset: .5
                 });
-            },6000)
-            
+            }, 8000)
+
             // setTimeout(function(){
             //     $('.message').css()
             // },5001)
-        })
-            }, 6000);
-
         });
     </script>
 </body>
