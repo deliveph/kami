@@ -217,6 +217,9 @@
   text-align: initial; }
   .news_wrap .news_main.newsDetails_main .img {
     margin-right: 84px; }
+    .news_wrap .news_main.newsDetails_main .img video {
+      width: 524px;
+      height: 312px; }
   .news_wrap .news_main.newsDetails_main .right {
     color: #666;
     margin-bottom: 28px; }
@@ -233,7 +236,7 @@
       padding-bottom: 36px;
       border-bottom: 1px solid #bababa; }
       .news_wrap .news_main.newsDetails_main .right .content h4 {
-        margin-top: 34px;
+        margin-top: 10px;
         line-height: 36px; }
       .news_wrap .news_main.newsDetails_main .right .content p {
         color: #808080;
