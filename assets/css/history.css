@@ -1,0 +1,142 @@
+body {
+    background-color: #ffffff;
+    min-width: 1200px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+}
+
+.hdiv1 {
+    width: 100%;
+    height: 652px;
+}
+
+.hdiv1 img {
+    width: 100%;
+}
+
+.hdiv2 {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: 500;
+    margin-top: 90px;
+    color: #808080;
+}
+
+.hdiv3 {
+    width: 75%;
+    height: 900px;
+    margin: 0px auto;
+    margin-top: 66px;
+    overflow: hidden;
+}
+
+.hdiv3 .h3left {
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.h3left .htable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 54px 22px;
+}
+
+.h3left .htable {
+    height: 276px;
+}
+
+.h3left img {
+    height: 100%;
+}
+
+
+.h3left .year td {
+    font-size: 18px;
+    color: #666666;
+    border-bottom: 2px solid #212121;
+    height: 40px;
+}
+
+.h3left .con td {
+    font-size: 14px;
+    color: #4d4d4d;
+    vertical-align: top;
+    line-height: 30px;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+.hdiv3 .h3right {
+    width: 15%;
+    height: 840px;
+    display: inline-block;
+    margin-left: 100px;
+    overflow-y: auto;
+}
+
+.swiper-pagination {
+    padding-top: 30px;
+}
+
+.swiper-pagination-bullet {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    color: #666666;
+    opacity: 1;
+    display: block;
+    border-radius: unset;
+    background-color: #ffffff;
+}
+
+.swiper-pagination-bullet img {
+    visibility: hidden;
+}
+
+.swiper-pagination-bullet-active {
+    border-radius: unset;
+    background-color: #ffffff;
+}
+
+.swiper-pagination-bullet-active img {
+    visibility: unset;
+}
+
+.animated {
+    animation-duration: 4s;
+}

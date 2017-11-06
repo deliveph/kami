@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>产品</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-3.4.2.min.js"></script>
+
+    <!-- 动画 -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <script src="assets/js/swiper.animate1.0.2.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/product.css">
+
+    <style>
+        body {
+            overflow: hidden;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="warp_bg">
+        <video src="assets/video/3880367.mp4" autoplay="autoplay" loop="loop"></video>
+    </div>
+    <header>
+        <div class="logo">
+            <img src="assets/images/Index/logo.png" />
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#">产品</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+                <li>
+                    <a href="#">加入开米</a>
+                </li>
+                <li>
+                    <a href="#">联系我们</a>
+                </li>
+                <li>
+                    <a href="#">产品</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search">
+            <ul>
+                <li>
+                    <a>英语</a>
+                </li>
+                <li style="margin-left:34px;">
+                    <a>登录</a>
+                </li>
+                <li style="margin-left:50px;">
+                    <img style="vertical-align:sub" src="assets/images/Index/nav_store.png" />
+                </li>
+                <li style="margin-left:40px;">
+                    <img style="vertical-align:sub" src="assets/images/Index/nav_search.png" />
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section>
+        <div class="product_list">
+            <div class="product_series">
+                <ul>
+                    <li>
+                        健康餐洗系列
+                    </li>
+                    <li>
+                        涤王洁衣系列
+                    </li>
+                    <li>
+                        贝芬护理系列
+                    </li>
+                    <li>
+                        力净清洁系列
+                    </li>
+                    <li>
+                        涤尔系列
+                    </li>
+                    <li>
+                        消毒液
+                    </li>
+                    <li>
+                        婴儿洗系列
+                    </li>
+                    <li>
+                        KAKA宠物系列
+                    </li>
+                </ul>
+            </div>
+            <div class="product_Minseries animated fadeInLeft hide">
+                <a href="#" class="more">查看全部
+                    <i></i>
+                </a>
+                <h3>涤王洁衣系列</h3>
+                <ul>
+                    <li>
+                        开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                    </li>
+                    <li>
+                        开米涤王内衣专用洗涤液250g
+                    </li>
+                    <li>
+                        开米涤王内衣专用洗涤液100g
+                    </li>
+                    <li>
+                        开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                    </li>
+                    <li>
+                        开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                    </li>
+                </ul>
+                <h3>力净清洗系列</h3>
+                <ul>
+                    <li>
+                        力净强力洁厕净620g
+                    </li>
+                    <li>
+                        力净钻石玻璃净620g
+                    </li>
+                    <li>
+                        力净钻石玻璃净620g
+                    </li>
+                    <li>
+                        力净钻石玻璃净620g
+                    </li>
+                    <li>
+                        力净钻石玻璃净620g
+                    </li>
+                </ul>
+                <h3>健康清洗系列</h3>
+                <ul>
+                    <li>
+                        开米蔬果清洗剂350g
+                    </li>
+                    <li>
+                        开米餐具净（无香型）350g
+                    </li>
+                    <li>
+                        开米蔬果清洗剂350g
+                    </li>
+                </ul>
+            </div>
+            <div class="product_content hide animated fadeInLeft">
+                <div class="img">
+                    <img src="assets/images/asfdafd.png" alt="">
+                </div>
+                <p class="weight">1000g</p>
+                <div class="price">建议零售价 - $89.00</div>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    <script>
+        $(function () {
+            $('.product_series').on('click', 'li', function () {
+                var that = $(this)
+                that.addClass('active').siblings().removeClass("active")
+                $('.product_Minseries').removeClass('hide')
+            })
+            $('.product_list .product_Minseries').on('click', 'li', function () {
+                var that = $(this)
+                that.addClass('active').siblings().removeClass("active")
+                $('.product_content').removeClass('hide')
+            })
+        })
+    </script>
+</body>
+
+</html>

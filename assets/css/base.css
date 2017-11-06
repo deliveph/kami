@@ -1,0 +1,553 @@
+/* reset */
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+textarea,
+p,
+blockquote,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* 初始化标签在所有浏览器中的margin、padding值 */
+
+fieldset,
+img {
+  border: 0 none
+}
+
+
+/* 重置fieldset（表单分组）、图片的边框为0*/
+
+dl,
+ul,
+ol,
+menu,
+li {
+  list-style: none
+}
+
+
+/* 重置类表前导符号为onne,menu在HTML5中有效 */
+
+blockquote,
+q {
+  quotes: none
+}
+
+
+/* 重置嵌套引用的引号类型 */
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none
+}
+
+
+/* 重置嵌套引用*/
+
+input,
+select,
+textarea,
+button {
+  vertical-align: middle
+}
+
+
+/* 重置表单控件垂直居中*/
+
+button {
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer
+}
+
+
+/* 重置表单button按钮效果 */
+
+
+/* body {
+  background: #fff
+} */
+
+
+/* 重置body 页面背景为白色 */
+
+body,
+th,
+td,
+input,
+select,
+textarea,
+button {
+  font-size: 12px;
+  line-height: 1;
+  font-family: "Microsoft YaHei";
+  color: #666
+}
+
+
+/* 重置页面文字属性 */
+
+a {
+  color: #666;
+  text-decoration: none
+}
+
+
+/* 重置链接a标签 */
+
+a:active,
+a:hover {
+  text-decoration: none
+}
+
+
+/* 重置链接a标签的鼠标滑动效果 */
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+var {
+  font-style: normal;
+  font-weight: normal
+}
+
+
+/* 重置样式标签的样式 */
+
+caption {
+  display: none;
+}
+
+
+/* 重置表格标题为隐藏 */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+
+/* 重置table属性 */
+
+img {
+  vertical-align: top
+}
+
+
+/* 图片在当前行内的垂直位置 */
+
+
+/* 页面设置 */
+
+
+/* 取消a标签点击后的虚线框 */
+
+a {
+  outline: none;
+}
+
+a:active {}
+
+
+/* 设置页面文字等在拖动鼠标选中情况下的背景色与文字颜色 */
+
+
+/*   
+::selection {color: #fff;background-color: #4C6E78;}      
+::-moz-selection {color: #fff;background-color: #4C6E78;}   
+*/
+
+
+/*清除浮动*/
+
+.clear {
+  clear: both;
+}
+
+
+/*清除浮动--推荐使用*/
+
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.col-1 {
+  width: 10%;
+}
+
+.col-2 {
+  width: 20%;
+}
+
+.col-3 {
+  width: 30%;
+}
+
+.col-4 {
+  width: 40%;
+}
+
+.col-5 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 60%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+.col-8 {
+  width: 80%;
+}
+
+.col-9 {
+  width: 90%;
+}
+
+.dis {
+  display: block;
+}
+
+.dis-in {
+  display: inline-block;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-l {
+  text-align: left;
+}
+
+.t-r {
+  text-align: right
+}
+
+body {
+  background-color: #f0f2f5;
+}
+
+input,
+textare {
+  outline: none;
+}
+
+.por {
+  position: relative
+}
+
+.poa {
+  position: absolute
+}
+
+.fl {
+  float: left
+}
+
+.fr {
+  float: right
+}
+
+.hg10 {
+  height: 0.1rem;
+  background-color: #eff1f4;
+}
+
+.hg20 {
+  height: 0.2rem;
+  background-color: #eff1f4;
+}
+
+.hg30 {
+  height: 0.3rem;
+  background-color: #eff1f4;
+}
+
+.hide {
+  display: none
+}
+
+.mt20 {
+  margin-top: 0.2rem;
+}
+
+.pdlf30 {
+  padding: 0 0.15rem;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #cacaca;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #cacaca;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #cacaca;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #cacaca;
+}
+
+
+/*  */
+
+.modal-open {
+  overflow: inherit !important;
+  position: inherit !important;
+}
+
+textarea {
+  border: 0;
+  resize: none;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+body {
+  background-color: #fff;
+}
+
+header {
+  height: 105px;
+}
+header{
+  width: 100%;
+  height: 105px;
+  background-image: url('../images/Index/nav_bg.png');
+  background-size:cover;
+  min-width: 1200px;
+}
+
+.logo{
+  width: 168px;
+  height: 105px;
+  line-height: 105px;
+  margin-left: 104px;
+  float:left;
+}
+
+.logo img{
+  margin-top:30px;
+}
+
+.menu{
+  float:left;
+  margin-left: 50px;
+  height: 105px;
+  line-height: 105px;
+  
+}
+
+.menu ul li{
+  float: left;       
+}
+
+.menu ul li:not(:first-child){
+  margin-left: 36px;
+}
+
+.search{
+  float: right;
+  margin-right: 106px;
+  height: 105px;
+  line-height: 105px;
+}
+
+.search ul li{
+  float:left;
+  
+}
+
+ul li a{
+  color:white;
+  
+}
+
+
+
+section {}
+
+
+.divimg6{
+  width:100%;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin-top:70px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.divimg7{
+  width:100%;
+  height: 270px;
+  
+}
+
+.table3{
+  width:100%;
+  max-width: 1270px;
+  border-collapse:separate; 
+  border-spacing:20px 10px;
+  margin:0px auto;
+}
+
+.divimg7 .ttd td{
+  text-align: center;
+  font-size: 14px;
+  color: #666666;
+  line-height: 24px;
+}
+
+.divimg7 .htr td:hover{
+  background-color: #B2B2B2;
+}
+
+
+footer {
+  width: 100%;
+  height: 480px;
+  margin-top: 80px;
+}
+
+footer .info {
+  width: 100%;
+  height: 264px;
+  border-top: 1px solid #b5b5b5;
+  padding-top: 30px;
+}
+
+footer .info .fdiv1 {
+  width: 30%;
+  float: left;
+  margin-left: 108px;
+}
+
+.fdiv1 .lmail {
+  float: left;
+  margin-top: 70px;
+  border-bottom: 1px solid #b5b5b5;
+  width: 80%;
+  font-size: 18px;
+  line-height: 32px;
+}
+
+footer .info .fdiv2 {
+  width: 20%;
+  float: left;
+}
+
+footer dd,
+footer dd a {
+  color: #4D4D4D;
+}
+
+.fdiv2 dd {
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+}
+
+footer .info .fdiv3 {
+  width: 20%;
+  float: left;
+}
+
+.fdiv3 dd {
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+}
+
+footer .info .fdiv4 {
+  width: 20%;
+  float: left;
+}
+
+.fdiv4 dd {
+  font-size: 14px;
+  line-height: 32px;
+  height: 32px;
+  width: 90%;
+}
+
+footer .info2 {
+  width: 100%;
+  height: 130px;
+  background: linear-gradient(to right, #09348b, #0f7bff);
+  padding-top: 50px;
+}
+
+footer .info2 .tinfo2 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+}
+
+.info2 .tinfo2 td {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+.tinfo2 td img {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.info2 .tinfo2 td:not(:last-child) {
+  border-right: 1px solid white;
+}

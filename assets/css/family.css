@@ -1,0 +1,178 @@
+.family_wrap .banner {
+  min-width: 1200px;
+  height: 652px;
+  background: url("../images/family/family_banner.png") no-repeat center;
+  background-size: cover;
+  display: flex; }
+  .family_wrap .banner .message {
+    padding: 145px 104px 0;
+    max-width: 612px;
+    position: relative; }
+    .family_wrap .banner .message h1 {
+      font-size: 150px;
+      color: #fff; }
+    .family_wrap .banner .message h3 {
+      margin-top: 40px;
+      font-size: 26px;
+      color: #fff; }
+    .family_wrap .banner .message p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 24px; }
+    .family_wrap .banner .message button {
+      position: absolute;
+      width: 248px;
+      height: 34px;
+      line-height: 34px;
+      text-align: center;
+      font-size: 18px;
+      color: #fff;
+      bottom: 40px;
+      border: 1px solid #fff; }
+  .family_wrap .banner .canvasRight {
+    flex: 1; }
+.family_wrap .family_main {
+  padding-top: 106px; }
+  .family_wrap .family_main h2 {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #808080;
+    line-height: 50px;
+    text-align: center; }
+  .family_wrap .family_main .company_personnel {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 72px;
+    padding-bottom: 36px; }
+    .family_wrap .family_main .company_personnel ul {
+      display: flex;
+      flex-wrap: wrap; }
+    .family_wrap .family_main .company_personnel li {
+      margin-right: 130px;
+      padding: 34px 0;
+      flex: 1;
+      max-width: 610px;
+      min-width: 512px;
+      border-bottom: 1px solid #c6c6c6; }
+      .family_wrap .family_main .company_personnel li:nth-child(2n) {
+        margin-right: 0; }
+      .family_wrap .family_main .company_personnel li .img {
+        width: 100%;
+        max-height: 310px; }
+        .family_wrap .family_main .company_personnel li .img img {
+          width: 100%;
+          height: 100%;
+          max-height: 310px; }
+      .family_wrap .family_main .company_personnel li .row {
+        display: flex;
+        margin-top: 22px; }
+      .family_wrap .family_main .company_personnel li .left {
+        flex: 1;
+        text-align: left; }
+        .family_wrap .family_main .company_personnel li .left h3 {
+          font-size: 14px;
+          color: #0f7bff; }
+        .family_wrap .family_main .company_personnel li .left p {
+          font-size: 14px;
+          color: #666;
+          margin-top: 8px; }
+      .family_wrap .family_main .company_personnel li .right {
+        flex: 1;
+        text-align: right; }
+        .family_wrap .family_main .company_personnel li .right p {
+          line-height: 24px; }
+  .family_wrap .family_main .jobMain .screen {
+    padding: 60px 0 6px;
+    background-color: #f2f2f2; }
+    .family_wrap .family_main .jobMain .screen .screen_main {
+      width: 1200px;
+      margin: 0 auto;
+      display: flex; }
+    .family_wrap .family_main .jobMain .screen .screenList {
+      font-size: 18px;
+      color: #666;
+      margin-right: 18px; }
+      .family_wrap .family_main .jobMain .screen .screenList label {
+        margin-right: 10px; }
+      .family_wrap .family_main .jobMain .screen .screenList span {
+        width: 134px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #fff;
+        display: inline-block;
+        text-align: center; }
+  .family_wrap .family_main .jobMain .jobList li {
+    font-size: 14px;
+    color: #666;
+    padding: 74px 0;
+    background-color: #f2f2f2; }
+    .family_wrap .family_main .jobMain .jobList li:nth-child(2n) {
+      background-color: #e6e6e6; }
+    .family_wrap .family_main .jobMain .jobList li > div {
+      width: 1200px;
+      margin: 0 auto; }
+    .family_wrap .family_main .jobMain .jobList li .name {
+      font-size: 18px;
+      margin-bottom: 14px; }
+    .family_wrap .family_main .jobMain .jobList li .time {
+      border-bottom: 2px solid #3f3f3f;
+      padding-bottom: 22px; }
+      .family_wrap .family_main .jobMain .jobList li .time span {
+        margin-right: 152px; }
+    .family_wrap .family_main .jobMain .jobList li .row {
+      display: flex;
+      margin-top: 36px;
+      padding-bottom: 36px;
+      min-height: 576px;
+      border-bottom: 1px solid #cccccc; }
+    .family_wrap .family_main .jobMain .jobList li .jobRequire {
+      width: 356px;
+      position: relative; }
+      .family_wrap .family_main .jobMain .jobList li .jobRequire p {
+        margin-bottom: 6px;
+        line-height: 26px; }
+        .family_wrap .family_main .jobMain .jobList li .jobRequire p.workplace {
+          color: #0f7bff; }
+      .family_wrap .family_main .jobMain .jobList li .jobRequire .share {
+        width: 230px;
+        position: absolute;
+        bottom: 0; }
+        .family_wrap .family_main .jobMain .jobList li .jobRequire .share P img {
+          width: 30px;
+          height: 30px; }
+          .family_wrap .family_main .jobMain .jobList li .jobRequire .share P img.icon_weibo {
+            margin-right: 16px; }
+          .family_wrap .family_main .jobMain .jobList li .jobRequire .share P img.icon_weixin {
+            margin-right: 18px; }
+          .family_wrap .family_main .jobMain .jobList li .jobRequire .share P img.icon_message {
+            width: 100px;
+            height: 20px;
+            vertical-align: bottom; }
+    .family_wrap .family_main .jobMain .jobList li .jobObligation {
+      flex: 1; }
+      .family_wrap .family_main .jobMain .jobList li .jobObligation h4 {
+        font-size: 16px;
+        margin-bottom: 12px; }
+        .family_wrap .family_main .jobMain .jobList li .jobObligation h4.status {
+          margin-top: 22px; }
+      .family_wrap .family_main .jobMain .jobList li .jobObligation p {
+        margin-bottom: 6px;
+        line-height: 26px; }
+  .family_wrap .family_main .jobMain .job_btn {
+    text-align: center;
+    width: 248px;
+    height: 34px;
+    line-height: 34px;
+    margin: 0 auto;
+    margin-top: 44px; }
+    .family_wrap .family_main .jobMain .job_btn button {
+      font-size: 16px;
+      color: #666;
+      width: 248px;
+      height: 34px;
+      line-height: 34px;
+      border: 1px solid #7e7e7e; }
+
+/*# sourceMappingURL=family.css.map */

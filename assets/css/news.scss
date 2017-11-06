@@ -1,0 +1,328 @@
+@keyframes warn {
+    0% {
+        transform: scale(0);
+        opacity: 0.0;
+    }
+    25% {
+        transform: scale(0);
+        opacity: 0.1;
+    }
+    50% {
+        transform: scale(0.1);
+        opacity: 0.3;
+    }
+    75% {
+        transform: scale(0.5);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.0;
+    }
+}
+
+.container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+}
+
+.dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    left: 15px;
+    top: 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.pulse {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 2px;
+    top: 2px;
+    border: 6px solid red;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    z-index: 1;
+    opacity: 0;
+    -webkit-animation: warn 3s ease-out;
+    -moz-animation: warn 3s ease-out;
+    animation: warn 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.news_wrap {
+    .banner {
+        min-width: 1200px;
+        height: 652px;
+        background: url('../images/news/news_banner_bg.png') no-repeat center;
+        background-size: cover;
+        display: flex;
+        .message {
+            padding: 145px 104px 0;
+            max-width: 612px;
+            h1 {
+                font-size: 150px;
+                color: #0f78ff;
+            }
+            h3 {
+                margin-top: 40px;
+                font-size: 26px;
+                color: #0f78ff;
+            }
+            p {
+                margin-top: 20px;
+                font-size: 14px;
+                color: #0f78ff
+            }
+        }
+        .canvasRight {
+            flex: 1;
+        }
+    }
+    .news_main {
+        width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+        h2 {
+            font-size: 32px;
+            color: #808080;
+            margin: 80px 0 90px;
+        }
+        .news_list {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    flex: 1;
+                    padding: 0 20px;
+                    width: 272px;
+                    min-width: 166px;
+                    max-width: 272px;
+                    max-height: 662px;
+                    overflow: hidden;
+                    border-right: 1px solid #bababa;
+                    position: relative;
+                    margin-bottom: 54px;
+                    &:nth-child(1) {
+                        width: 538px;
+                        flex: initial;
+                        max-width: 538px;
+                    }
+                    &.news_list2 {
+                        h3 {
+                            margin-top: 0;
+                        }
+                        .img {
+                            margin-top: 60px;
+                        }
+                        a {
+                            margin-top: 75px;
+                            position: initial;
+                        }
+                    }
+                    &.news_list5 {
+                        margin-top: 0;
+                    }
+                    &.news_list6 {
+                        width: 454px;
+                        flex: initial; // display: flex;
+                        max-width: 454px;
+                        padding: 0;
+                        .max_img {
+                            width: 434px;
+                            max-height: 312px;
+                            padding: 0 10px;
+                            img {
+                                width: 100%;
+                                max-height: 312px;
+                            }
+                        }
+                        .row {
+                            display: flex;
+                            position: relative;
+                            padding-top: 12px;
+                        }
+                        .left {
+                            flex: 1;
+                            padding: 0 10px;
+                            position: relative;
+                            height: 338px;
+                            border-right: 1px solid #bababa;
+                        }
+                        .right {
+                            flex: 1;
+                            padding: 0 10px;
+                            position: relative;
+                            height: 338px;
+                        }
+                    }
+                    &.news_list7 {
+                        width: 454px;
+                        flex: initial; // display: flex;
+                        max-width: 454px;
+                        padding: 0;
+                        .max_img {
+                            width: 434px;
+                            max-height: 312px;
+                            padding: 0 10px;
+                            img {
+                                width: 100%;
+                                max-height: 312px;
+                            }
+                        }
+                        .row {
+                            display: flex;
+                            position: relative;
+                            padding-top: 12px;
+                        }
+                        .left {
+                            flex: 1;
+                            padding: 0 10px;
+                            position: relative;
+                            height: 338px;
+                            border-right: 1px solid #bababa;
+                        }
+                        .right {
+                            flex: 1;
+                            padding: 0 10px;
+                            position: relative;
+                            height: 338px;
+                        }
+                    }
+                    .img {
+                        width: 100%;
+                        max-height: 312px;
+                        overflow: hidden;
+                        &:hover {
+                            img {
+                                transform: scale(1.1);
+                            }
+                        }
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            max-height: 312px;
+                        }
+                    }
+                    h3 {
+                        font-size: 18px;
+                        color: #333;
+                        margin-top: 16px;
+                        line-height: 24px;
+                    }
+                    em {
+                        width: 100px;
+                        height: 2px;
+                        background-color: #414141;
+                        margin-top: 16px;
+                        display: inline-block;
+                        margin-bottom: 16px;
+                    }
+                    p {
+                        font-size: 14px;
+                        color: #666;
+                        line-height: 24px;
+                    }
+                    a {
+                        font-size: 14px;
+                        color: #666;
+                        margin-top: 48px; // border-bottom: 1px solid #5d5d5d;
+                        display: inline-block;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                    }
+                }
+            }
+            .more_btn {
+                width: 248px;
+                height: 36px;
+                margin: 0 auto;
+                button {
+                    font-size: 14px;
+                    color: #666;
+                    width: 248px;
+                    height: 36px;
+                    line-height: 36px;
+                    border: 1px solid #5a5a5a;
+                }
+            }
+        }
+    }
+}
+
+// news details
+.news_wrap {
+    .news_main {
+        &.newsDetails_main {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            margin-top: 104px;
+            text-align: initial;
+            .img {
+                margin-right: 84px;
+                img {}
+            }
+            .right {
+                color: #666;
+                margin-bottom: 28px;
+                h2 {
+                    font-size: 32px;
+                    margin: 0;
+                    margin-bottom: 18px;
+                }
+                .time {
+                    font-size: 20px;
+                    padding-bottom: 20px;
+                    border-bottom: 2px solid #3b3b3b;
+                }
+                .content {
+                    font-size: 16px;
+                    padding-bottom: 36px;
+                    border-bottom: 1px solid #bababa;
+                    h4 {
+                        margin-top: 34px;
+                        line-height: 36px;
+                    }
+                    p {
+                        color: #808080;
+                        line-height: 26px;
+                    }
+                }
+                .share {
+                    margin-top:28px;
+                    P {
+                        img {
+                            width: 30px;
+                            height: 30px;
+                            &.icon_weibo {
+                                margin-right: 16px;
+                            }
+                            &.icon_weixin {
+                                margin-right: 18px;
+                            }
+                            &.icon_message {
+                                width: 100px;
+                                height: 20px;
+                                vertical-align: bottom;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

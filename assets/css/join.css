@@ -1,0 +1,143 @@
+.join_warp .banner {
+  min-width: 1200px;
+  height: 952px;
+  background: url("../images/join/gdfgdfg.png") no-repeat center;
+  background-size: cover; }
+  .join_warp .banner .message {
+    padding: 330px 0px 0 100px;
+    max-width: 612px; }
+    .join_warp .banner .message h1 {
+      font-size: 150px;
+      color: #fff; }
+    .join_warp .banner .message h3 {
+      margin-top: 40px;
+      font-size: 26px;
+      color: #fff; }
+    .join_warp .banner .message p {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 20px; }
+.join_warp .join_main {
+  margin-top: 80px; }
+  .join_warp .join_main .join_intro {
+    color: #666;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center; }
+    .join_warp .join_main .join_intro h2 {
+      font-size: 32px; }
+    .join_warp .join_main .join_intro p {
+      font-size: 26px;
+      line-height: 36px;
+      margin-top: 28px; }
+.join_warp .shop_main {
+  margin-top: 64px; }
+  .join_warp .shop_main .shop_search {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 45px;
+    line-height: 45px;
+    border-bottom: 2px solid #bdbdbd; }
+    .join_warp .shop_main .shop_search .icon_search {
+      width: 22px;
+      height: 24px;
+      background: url("../images/join/join_search.png") no-repeat center;
+      background-size: 22px 24px;
+      margin-right: 20px;
+      margin-top: 14px; }
+    .join_warp .shop_main .shop_search input {
+      flex: 1;
+      font-size: 26px;
+      color: #808080;
+      border: 0;
+      padding: 10px; }
+    .join_warp .shop_main .shop_search .icon_confirm {
+      width: 20px;
+      height: 12px;
+      margin-top: 18px;
+      background: url("../images/join/join_more.png") no-repeat center;
+      background-size: 20px 12px;
+      cursor: pointer; }
+  .join_warp .shop_main .shop_list {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap; }
+    .join_warp .shop_main .shop_list li {
+      flex: 1;
+      min-width: 285px;
+      max-width: 285px;
+      font-size: 14px;
+      color: #666;
+      margin-right: 20px; }
+      .join_warp .shop_main .shop_list li:last-child {
+        margin-right: 0; }
+      .join_warp .shop_main .shop_list li .img {
+        width: 285px;
+        height: 168px; }
+        .join_warp .shop_main .shop_list li .img img {
+          width: 100%;
+          height: 168px; }
+      .join_warp .shop_main .shop_list li h3 {
+        font-size: 26px;
+        margin-top: 30px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #2c2c2c; }
+      .join_warp .shop_main .shop_list li p {
+        margin-bottom: 16px;
+        line-height: 26px; }
+      .join_warp .shop_main .shop_list li .more {
+        margin-top: 80px; }
+        .join_warp .shop_main .shop_list li .more.active {
+          text-align: center; }
+          .join_warp .shop_main .shop_list li .more.active img {
+            width: 85px;
+            height: 43px;
+            margin: 0 auto; }
+        .join_warp .shop_main .shop_list li .more a {
+          color: #666;
+          padding-bottom: 4px;
+          border-bottom: 1px solid #5a5a5a; }
+  .join_warp .shop_main .shop_details {
+    padding: 88px 0 90px;
+    background-color: #f2f2f2; }
+    .join_warp .shop_main .shop_details > div {
+      width: 1200px;
+      margin: 0 auto; }
+    .join_warp .shop_main .shop_details .img {
+      display: flex; }
+      .join_warp .shop_main .shop_details .img img {
+        width: 49%;
+        max-height: 346px;
+        margin-right: 20px; }
+        .join_warp .shop_main .shop_details .img img:last-child {
+          margin-right: 0; }
+    .join_warp .shop_main .shop_details .row {
+      display: flex;
+      margin-top: 70px; }
+    .join_warp .shop_main .shop_details .location_msg {
+      min-width: 346px; }
+      .join_warp .shop_main .shop_details .location_msg p {
+        font-size: 14px;
+        color: #999;
+        margin-bottom: 12px; }
+    .join_warp .shop_main .shop_details .shop_msg h3 {
+      font-size: 26px;
+      color: #666;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #424242;
+      margin-bottom: 16px; }
+    .join_warp .shop_main .shop_details .shop_msg p {
+      font-size: 14px;
+      color: #999;
+      line-height: 26px; }
+    .join_warp .shop_main .shop_details .shop_msg .show {
+      margin-top: 52px; }
+      .join_warp .shop_main .shop_details .shop_msg .show a {
+        padding-bottom: 4px;
+        border-bottom: 1px solid #5c5c5c; }
+
+/*# sourceMappingURL=join.css.map */
