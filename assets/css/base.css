@@ -452,10 +452,13 @@ section {}
   line-height: 24px;
 }
 
-.divimg7 .htr td:hover{
+/*.divimg7 .htr td:hover{
   background-color: #B2B2B2;
-}
+}*/
 
+.divimg7 .tcolor{
+  color:#0f7bff !important;
+}
 
 footer {
   width: 100%;
