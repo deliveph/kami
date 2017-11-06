@@ -40,6 +40,29 @@ section {
     vertical-align: middle;
 }
 
+.vedio-txt {
+    position: absolute;
+    left: 0px;
+    top: 105px;
+    width: 100%;
+    height: 772px;
+    text-align: center;
+    color: transparent;
+    z-index: 1;
+    vertical-align: middle;
+    padding-top: 200px;
+}
+
+.vedio-txt h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.vedio-txt span {
+    font-size: 165px;
+    -webkit-text-stroke: 5px #fff;
+}
+
 .divimg1 {
     height: 1080px;
     width: 100%;
@@ -63,10 +86,6 @@ section {
     height: 100%;
 }
 
-.table1 .swiper-slide:hover {
-    background-color: #B2B2B2;
-}
-
 .animated {
     animation-duration: 3s;
 }
@@ -74,7 +93,7 @@ section {
 .divimg2 {
     width: 100%;
     height: 987px;
-    margin-top:90px;
+    margin-top: 90px;
 }
 
 .table2 {
@@ -87,7 +106,7 @@ section {
 }
 
 .table2 td img {
-    height: 100%;
+    height: 492px;
     width: 100%;
 }
 
@@ -99,7 +118,7 @@ section {
 .divimg4 {
     width: 100%;
     height: 315px;
-    margin-top:5px;
+    margin-top: 5px;
 }
 
 .divimg5 {
@@ -114,10 +133,26 @@ section {
     width: 100%;
 }
 
-.table2 td img:hover {
+.table2 td .img {
+    animation: tobig 2s forwards;
+}
+
+
+
+/*.table2 td img:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
     -ms-transform: scale(1.1);
+    animation: tobig 2s forwards;
+}*/
+
+@keyframes tobig {
+    form {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
 }

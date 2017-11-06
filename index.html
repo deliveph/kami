@@ -558,6 +558,9 @@
             if (upindex == 0) {
                 upindex = 1;
                 $(".upimg").addClass("fadeInUp").addClass("animated");
+                setTimeout(function () {
+                    $(".upimg").removeClass("fadeInUp").removeClass("animated");
+                }, 3000);
             }
         }
 
@@ -582,5 +585,14 @@
         $(this).addClass("tcolor");
     }, function () {
         $(this).removeClass("tcolor");
+    });
+
+    $(".table2 td img").hover(function () {
+        if (!$(this).hasClass('animated')) {
+            $(this).addClass("img");
+        }
+
+    }, function () {
+        $(this).removeClass("img");
     });
 </script>
