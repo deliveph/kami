@@ -201,7 +201,7 @@
 .aboutKami_wrap{
     &.plantScience_wrap{
         .banner{
-            background: url('../images/plantScience/gongchang_banner.png') no-repeat center;
+            background: url('../images/plant/gongchang_banner.png') no-repeat center;
         }
     }
     .aboutKami_main{
@@ -280,6 +280,7 @@
                     }
                     .main{
                         flex: 1;
+                        // min-width: 705px;
                         h3{
                             font-size: 18px;
                             color: #434343;
