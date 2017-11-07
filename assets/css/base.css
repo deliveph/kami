@@ -162,7 +162,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
-  table-layout: fixed;
+  /* table-layout: fixed; */
 }
 
 
@@ -551,6 +551,7 @@ footer .info2 .tinfo2 {
   height: 50px;
   line-height: 50px;
   text-align: center;
+  width: 20%;
 }
 
 .tinfo2 td img {
