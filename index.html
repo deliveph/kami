@@ -15,14 +15,25 @@
     <script src="assets/swiper/swiper.animate1.0.2.min.js"></script>
 
     <style>
-
+        .divimg6 {
+            width: 100%;
+            height: 170px;
+            line-height: 170px;
+            text-align: center;
+            margin-top: 404px;
+            font-size: 18px;
+            font-weight: 500;
+            background-color: white;
+        }
     </style>
 </head>
 
 <body>
     <header id="div1">
         <div class="logo">
-            <a href="/"><img src="assets/images/Index/logo.png" /></a>
+            <a href="/">
+                <img src="assets/images/Index/logo.png" />
+            </a>
         </div>
         <div class="menu">
             <ul>
@@ -30,19 +41,18 @@
                     <a href="product.html">产品</a>
                 </li>
                 <li>
-                    <a href="aboutUs.html">关于我们</a>
+                    <a href="javascript:;">关于我们</a>
                 </li>
                 <li>
-                    <a href="aboutKami.html">加入开米</a>
+                    <a href="javascript:;">加入开米</a>
                 </li>
                 <li>
-                    <a href="sendmail.html">联系我们</a>
-                </li>
-                <li>
-                    <a href="news.html">新闻中心</a>
+                    <a href="javascript:;">联系我们</a>
                 </li>
             </ul>
+
         </div>
+        
         <div class="search">
             <ul>
                 <li>
@@ -60,10 +70,32 @@
             </ul>
         </div>
     </header>
+    <div class="menu_list hide slideInDown animated">
+        <div class="row about_list hide fadeIn animated">
+            <a href="aboutUs.html">品牌故事</a>
+            <a href="aboutKami.html">绿色生活</a>
+            <a href="plantScience.html">智慧工厂</a>
+            <a href="kamifamily.html">开米家族</a>
+            <a href="news.html">新闻中心</a>
+            <a href="history.html">发展历程</a>
+        </div>
+        <div class="row join_list hide fadeIn animated">
+            <a href="joinInvestment.html">招商加盟</a>
+            <br/>
+            <a href="joinInvestment.html">岗位招聘</a>
+        </div>
+        <div class="row contact_list hide fadeIn animated">
+            <a href="address.html">我们电话地址</a>
+            <a href="sendmail.html">发一封邮件给我们</a>
+            <a href="onlineorder.html">在线订购</a>
+            <a href="appraise.html">评分及评论</a>s
+        </div>
+    </div>
+    <div class="h105"></div>
     <div class="swiper-container" id="v1" style="height: 972px;">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-                <video data-keepplaying data-autoplay width="100%" height="100%" style="object-fit:fill;" autoplay>
+                <video data-keepplaying data-autoplay width="100%" height="100%" style="object-fit:fill;" autoplay loop>
                     <source src="assets/MP4/shutterstock_v3880367.mov" type="video/mp4">
                 </video>
             </div>
@@ -75,9 +107,10 @@
         </div>
 
         <div class="vedio-txt">
-            <h1>爱家庭 用开米</h1>
+            <img src="assets/images/Index/banner_size.png" />
+            <!-- <h1>爱家庭 用开米</h1>
             <br/>
-            <span>The best For Family</span>
+            <span>The best For Family</span> -->
         </div>
     </div>
     <div class="title" id="div2">
@@ -170,7 +203,7 @@
         </table>
     </div>
     <div class="divimg2" id="div3">
-        <table class="table2"  cellspacing="0" cellpadding="0">
+        <table class="table2" cellspacing="0" cellpadding="0">
             <tr>
                 <td style="width:25%;">
                     <img class="upimg" src="assets/images/Index/picture1.png" />
@@ -204,8 +237,7 @@
     </div>
 
     <div class="divimg6">
-        <span style="color:#666666;font-size:26px;">你也许</span>
-        <span style="color:#0f7bff;font-size:26px;">喜欢</span>
+        <span style="color:#666666;font-size:26px;">你也许</span><span style="color:#0f7bff;font-size:26px;">喜欢</span>
         <img style="width:28px;margin:-5px 0px;vertical-align:unset;" src="assets/images/Index/xin.png" />
     </div>
 
@@ -411,16 +443,16 @@
 
 </html>
 <script>
-    var swiper = new Swiper('#v1', {
-        loop: true,
-        autoplay: 2000
-    });
+    // var swiper = new Swiper('#v1', {
+    //     loop: true,
+    //     autoplay: 2000
+    // });
 
-    $("#v1 .swiper-slide").hover(function () {
-        swiper.stopAutoplay();
-    }, function () {
-        swiper.startAutoplay();
-    });
+    // $("#v1 .swiper-slide").hover(function () {
+    //     swiper.stopAutoplay();
+    // }, function () {
+    //     swiper.startAutoplay();
+    // });
 
     var swiper1 = new Swiper('#sw1', {
         loop: true,
@@ -536,18 +568,18 @@
             $("#div4").css("position", "fixed").css("top", ((top - dtop) / 35) + "px");
         }*/
 
-       /* var img5 = 3912;
-        if (index == 1) {
-            if (top > img5 + 500) {
-                $('.divimg7,.divimg6').css("visibility", "unset").addClass("fadeIn").addClass("animated");
+        /* var img5 = 3912;
+         if (index == 1) {
+             if (top > img5 + 500) {
+                 $('.divimg7,.divimg6').css("visibility", "unset").addClass("fadeIn").addClass("animated");
 
-            }
-        } else {
-            setTimeout(function () {
-                $('.divimg7,.divimg6').css("visibility", "hidden").removeClass("fadeIn").removeClass(
-                    "animated");
-            }, 1000);
-        }*/
+             }
+         } else {
+             setTimeout(function () {
+                 $('.divimg7,.divimg6').css("visibility", "hidden").removeClass("fadeIn").removeClass(
+                     "animated");
+             }, 1000);
+         }*/
 
 
         var img2 = 2435; //$(".table2").offset().top;
@@ -595,4 +627,25 @@
     }, function () {
         $(this).removeClass("img");
     });
+</script>
+<script>
+    $(function(){
+        $('.menu li').on('click',function(){
+            $('.menu_list').removeClass('hide');
+            var that = $(this);
+            if(that.index() == 1){
+                $('.menu_list .about_list').removeClass('hide');
+                $('.menu_list .join_list').addClass('hide');
+                $('.menu_list .contact_list').addClass('hide');
+            }else if(that.index() == 2){
+                $('.menu_list .about_list').addClass('hide');
+                $('.menu_list .join_list').removeClass('hide');
+                $('.menu_list .contact_list').addClass('hide');
+            }else if(that.index() == 3){
+                $('.menu_list .about_list').addClass('hide');
+                $('.menu_list .join_list').addClass('hide');
+                $('.menu_list .contact_list').removeClass('hide');
+            }
+        })
+    })
 </script>

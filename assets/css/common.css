@@ -1,9 +1,56 @@
+.h105{
+    height: 105px;
+}
+
+.animated1 {
+    -webkit-animation-duration: 1.1s;
+    animation-duration: 1.1s;
+}
+.animated2 {
+    -webkit-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+}
+.animated3 {
+    -webkit-animation-duration: 1.3s;
+    animation-duration: 1.3s;
+}
+.animated4 {
+    -webkit-animation-duration: 1.4s;
+    animation-duration: 1.4s;
+}
+
+.animated5 {
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+}
+.animated6 {
+    -webkit-animation-duration: 1.6s;
+    animation-duration: 1.6s;
+}
+.animated7 {
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+}
+
+.animated8 {
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+}
+
+.animated2s {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+
 header {
     width: 100%;
     height: 105px;
     background-image: url('../../assets/images/Index/nav_bg.png');
     background-size: cover;
     min-width: 1200px;
+    position: absolute;
+    z-index: 11;
+    
 }
 
 .logo {
@@ -29,6 +76,41 @@ header {
     float: left;
 }
 
+.menu_list{
+    height: 166px;
+    background: linear-gradient(to right,#003daf,#0f7bff);
+    position: absolute;
+    top: 105px;
+    width: 100%;
+    z-index: 10;
+}
+
+.menu_list .row{
+    padding:40px 0 40px 382px;
+    max-width: 232px;
+}
+
+.menu_list .row a{
+    min-width: 114px;
+    font-size: 12px;
+    color: #fff;
+    display: inline-block;
+    line-height: 30px;
+}
+
+.menu_list .about_list{
+    padding-left:386px;
+}
+
+.menu_list .join_list{
+    padding-left:468px;
+}
+
+.menu_list .contact_list{
+    padding-left:552px;
+}
+
+
 .menu ul li:not(:first-child) {
     margin-left: 36px;
 }
@@ -48,16 +130,6 @@ ul li a {
     color: white;
 }
 
-.divimg6 {
-    width: 100%;
-    height: 170px;
-    line-height: 170px;
-    text-align: center;
-    margin-top: 404px;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: white;
-}
 
 .divimg7 img {
     width: 100%;
@@ -165,7 +237,7 @@ footer .info .fdiv4 {
 footer .info2 {
     width: 100%;
     height: 145px;
-    background: linear-gradient(to right, #09348b, #0f7bff);
+    background: linear-gradient(to right, #003daf, #0f7bff);
     padding-top: 80px;
 }
 
@@ -189,3 +261,5 @@ footer .info2 .tinfo2 {
 .info2 .tinfo2 td:not(:last-child) {
     border-right: 1px solid white;
 }
+
+

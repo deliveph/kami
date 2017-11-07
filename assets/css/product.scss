@@ -20,7 +20,8 @@
 }
 
 .product_list .product_series {
-    flex: 1;
+    width: 33.3%;
+    // flex: 1;
     background: rgba(255, 255, 255, 0.85);
     padding-top: 194px;
     padding-left: 60px;
@@ -41,7 +42,8 @@
 }
 
 .product_list .product_Minseries {
-    flex: 1;
+    // flex: 1;
+    width: 33.3%;
     background: rgba(255, 255, 255, 0.85);
     padding-top: 190px;
     font-size: 14px;
@@ -67,7 +69,8 @@
 }
 
 .product_list .product_content {
-    flex: 1;
+    // flex: 1;
+    width: 33.3%;
     background: rgba(255, 255, 255, 0.85);
     text-align: center;
 }
