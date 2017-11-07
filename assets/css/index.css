@@ -60,6 +60,7 @@ section {
 
 .vedio-txt span {
     font-size: 165px;
+    color:transparent;
     -webkit-text-stroke: 5px #fff;
 }
 
