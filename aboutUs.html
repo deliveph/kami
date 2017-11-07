@@ -35,10 +35,10 @@
         }
 
         .animated {
-            animation-duration: 5s;
+            animation-duration: 4s ;
         }
 
-        .animated1 {
+        .animated3s {
             animation-duration: 3s;
         }
 
@@ -202,7 +202,7 @@
     </header>
     <section class="about_wrap">
         <div style="width:100%;height:105px;"></div>
-        <div class="banner bubble slideInDown animated animated1">
+        <div class="banner bubble slideInDown animated animated3s">
             <div class="message">
                 <h1>开米</h1>
                 <h1>品牌故事</h1>
@@ -404,13 +404,6 @@
 
                 $(".right").css("visibility", "unset").addClass("fadeIn").addClass("animated");
 
-                $('.bubble').circleMagic({
-                    elem: '.bubble',
-                    radius: 100,
-                    densety: .01,
-                    color: '#fff',
-                    clearOffset: .5
-                });
             }, 7000)
 
             setTimeout(function () {
@@ -419,7 +412,15 @@
                 $(".an1").addClass("lranimate1");
                 $(".an3").addClass("lranimate3");
                 $(".an4").addClass("lranimate4");
-            }, 8000);
+
+                $('.bubble').circleMagic({
+                    elem: '.bubble',
+                    radius: 100,
+                    densety: .02,
+                    color: '#fff',
+                    clearOffset: .5
+                });
+            }, 10000);
 
             var isshow = 0;
             $(window).scroll(function (e) {
