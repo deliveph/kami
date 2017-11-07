@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>招商加盟</title>
     <link rel="stylesheet" href="assets/css/base.css">
-
+    <link rel="stylesheet" href="assets/css/common.css">
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/swiper-3.4.2.min.js"></script>
 
@@ -115,12 +115,16 @@
             </ul>
         </div>
     </header>
+    <div class="h105"></div>
     <section class="join_warp">
         <div class="banner">
             <div class="message">
                 <h1>招商加盟</h1>
                 <h3>加盟商园地</h3>
                 <p>公司现已在国内30多个省会城市、单列市设立了子公司、分公司（办事处），建立了20多家开米双绿色产品在线专卖店，形成了覆盖全国的营销网络。</p>
+            </div>
+            <div class="map">
+                <img src="assets/images/join/map.png" alt="">
             </div>
         </div>
         <div class="limg slideInDown animated animated1">
@@ -388,8 +392,13 @@
             }, 3000);
 
             setTimeout(function () {
-                $(".message").css("visibility", "unset").addClass("fadeIn").addClass("animated");
+                $(".banner .map").css("visibility", "unset").addClass("fadeIn").addClass("animated");
             }, 7000);
+
+
+            setTimeout(function () {
+                $(".banner .message").css("visibility", "unset").addClass("fadeIn").addClass("animated");
+            }, 8000);
         })
     </script>
 </body>

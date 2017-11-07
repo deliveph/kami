@@ -20,7 +20,7 @@
 }
 
 .product_list .product_series {
-    width: 33.3%;
+    width: 29%;
     // flex: 1;
     background: rgba(255, 255, 255, 0.85);
     padding-top: 194px;
@@ -49,6 +49,13 @@
     font-size: 14px;
     color: #999;
     text-align: center;
+    overflow: hidden;
+}
+
+.product_list .product_Minseries .row{
+    text-align: left;
+    width: 54%;
+    margin: 0 auto;
 }
 
 .product_list .product_Minseries .more {}

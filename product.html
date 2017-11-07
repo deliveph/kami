@@ -21,14 +21,15 @@
             overflow: hidden;
             height: 100%;
         } */
-
     </style>
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="/"><img src="assets/images/Index/logo.png" /></a>
+            <a href="/">
+                <img src="assets/images/Index/logo.png" />
+            </a>
         </div>
         <div class="menu">
             <ul>
@@ -101,57 +102,59 @@
                 </ul>
             </div>
             <div class="product_Minseries hide">
-                <a href="productlist.html" class="more">查看全部
-                    <i></i>
-                </a>
-                <h3 class="animated1 fadeInLeft">涤王洁衣系列</h3>
-                <ul>
-                    <li class="animated1 fadeInLeft">
-                        开米涤王浓缩多功能中性洗衣液（3蓓）1kg
-                    </li >
-                    <li class="animated1 fadeInLeft">
-                        开米涤王内衣专用洗涤液250g
-                    </li>
-                    <li class="animated2 fadeInLeft">
-                        开米涤王内衣专用洗涤液100g
-                    </li>
-                    <li class="animated2 fadeInLeft">
-                        开米涤王浓缩多功能中性洗衣液（3蓓）1kg
-                    </li>
-                    <li class="animated3 fadeInLeft">
-                        开米涤王浓缩多功能中性洗衣液（3蓓）1kg
-                    </li>
-                </ul>
-                <h3 class="animated3 fadeInLeft">力净清洗系列</h3>
-                <ul>
-                    <li class="animated3 fadeInLeft">
-                        力净强力洁厕净620g
-                    </li>
-                    <li class="animated4 fadeInLeft">
-                        力净钻石玻璃净620g
-                    </li>
-                    <li class="animated4 fadeInLeft">
-                        力净钻石玻璃净620g
-                    </li>
-                    <li class="animated5 fadeInLeft">
-                        力净钻石玻璃净620g
-                    </li>
-                    <li class="animated5 fadeInLeft">
-                        力净钻石玻璃净620g
-                    </li>
-                </ul>
-                <h3 class="animated6 fadeInLeft">健康清洗系列</h3>
-                <ul>
-                    <li class="animated6 fadeInLeft">
-                        开米蔬果清洗剂350g
-                    </li>
-                    <li class="animated7 fadeInLeft">
-                        开米餐具净（无香型）350g
-                    </li>
-                    <li class="animated7 fadeInLeft">
-                        开米蔬果清洗剂350g
-                    </li>
-                </ul>
+                <div class="row">
+                    <a href="productlist.html" class="more">查看全部
+                        <i></i>
+                    </a>
+                    <h3 class="animated1 fadeInLeft">涤王洁衣系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                        </li>
+                        <li class="animated1 fadeInLeft">
+                            开米涤王内衣专用洗涤液250g
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            开米涤王内衣专用洗涤液100g
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                        </li>
+                        <li class="animated3 fadeInLeft">
+                            开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                        </li>
+                    </ul>
+                    <h3 class="animated3 fadeInLeft">力净清洗系列</h3>
+                    <ul>
+                        <li class="animated3 fadeInLeft">
+                            力净强力洁厕净620g
+                        </li>
+                        <li class="animated4 fadeInLeft">
+                            力净钻石玻璃净620g
+                        </li>
+                        <li class="animated4 fadeInLeft">
+                            力净钻石玻璃净620g
+                        </li>
+                        <li class="animated5 fadeInLeft">
+                            力净钻石玻璃净620g
+                        </li>
+                        <li class="animated5 fadeInLeft">
+                            力净钻石玻璃净620g
+                        </li>
+                    </ul>
+                    <h3 class="animated6 fadeInLeft">健康清洗系列</h3>
+                    <ul>
+                        <li class="animated6 fadeInLeft">
+                            开米蔬果清洗剂350g
+                        </li>
+                        <li class="animated7 fadeInLeft">
+                            开米餐具净（无香型）350g
+                        </li>
+                        <li class="animated7 fadeInLeft">
+                            开米蔬果清洗剂350g
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="product_content hide animated5 fadeInLeft">
                 <div class="img">
@@ -167,7 +170,7 @@
             $('.product_series').on('click', 'li', function () {
                 var that = $(this)
                 that.addClass('active').siblings().removeClass("active");
-                    $('.product_Minseries').removeClass('hide')
+                $('.product_Minseries').removeClass('hide')
 
             })
             $('.product_list .product_Minseries').on('click', 'li', function () {
