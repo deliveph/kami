@@ -75,28 +75,25 @@
         <div class="product_list">
             <div class="product_series animated fadeInLeft">
                 <ul>
-                    <li class="animated1 fadeInLeft">
+                    <li class="animated1 fadeInLeft" ltype='type1'>
                         健康餐洗系列
                     </li>
-                    <li class="animated2 fadeInLeft">
+                    <li class="animated2 fadeInLeft" ltype='type2'>
                         涤王洁衣系列
                     </li>
-                    <li class="animated3 fadeInLeft">
+                    <li class="animated3 fadeInLeft" ltype='type3'>
                         贝芬护理系列
                     </li>
-                    <li class="animated4 fadeInLeft">
+                    <li class="animated4 fadeInLeft" ltype='type4'>
                         力净清洁系列
                     </li>
-                    <li class="animated5 fadeInLeft">
-                        涤尔系列
+                    <li class="animated5 fadeInLeft" ltype='type5'>
+                        涤王系列
                     </li>
-                    <li class="animated6 fadeInLeft">
-                        消毒液
+                    <li class="animated7 fadeInLeft" ltype='type6'>
+                        婴儿洗系
                     </li>
-                    <li class="animated7 fadeInLeft">
-                        婴儿洗系列
-                    </li>
-                    <li class="animated8 fadeInLeft">
+                    <li class="animated8 fadeInLeft" ltype='type7'>
                         KAKA宠物系列
                     </li>
                 </ul>
@@ -106,7 +103,83 @@
                     <a href="productlist.html" class="more">查看全部
                         <i></i>
                     </a>
-                    <h3 class="animated1 fadeInLeft">涤王洁衣系列</h3>
+                    <h3 class="animated1 fadeInLeft" ltype="type1">健康餐洗系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            开米蔬果清洗剂350g
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            开米餐具净（无香型）350g
+                        </li>
+                    </ul>
+
+                    <h3 class="animated1 fadeInLeft" ltype="type2">涤王洁衣系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            开米涤王浓缩多功能中性洗衣液（3蓓）1kg
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            开米涤王内衣专用洗涤液250g
+                        </li>
+                        <li class="animated3 fadeInLeft">
+                            开米涤王香薰衣物柔顺剂1kg
+                        </li>
+                    </ul>
+
+                    <h3 class="animated1 fadeInLeft" ltype="type3">贝芬护理系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            开米贝芬洗手液250g
+                        </li>
+
+                    </ul>
+
+
+                    <h3 class="animated1 fadeInLeft" ltype="type4">力净清洁系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            开米力净强力洁厕净620g
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            开米力净钻石玻璃净620g
+                        </li>
+                        <li class="animated3 fadeInLeft">
+                            开米力净钻石厨房油垢净620g
+                        </li>
+                        <li class="animated3 fadeInLeft">
+                            开米力净钻石浴室净620g
+                        </li>
+                    </ul>
+
+                    <h3 class="animated1 fadeInLeft" ltype="type5">涤王洁衣系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            开米消毒液500g
+                        </li>
+                    </ul>
+
+                    <h3 class="animated1 fadeInLeft" ltype="type6">婴儿洗系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            婴儿洗衣液350g
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            婴儿奶瓶洗350g
+                        </li>
+                    </ul>
+
+                    <h3 class="animated1 fadeInLeft" ltype="type7">KAKA宠物系列</h3>
+                    <ul>
+                        <li class="animated1 fadeInLeft">
+                            宠物清洗剂（猫咪）350g
+                        </li>
+                        <li class="animated2 fadeInLeft">
+                            宠物清洗剂（狗狗）350g
+                        </li>
+                    </ul>
+
+
+                    <!--<h3 class="animated1 fadeInLeft">涤王洁衣系列</h3>
                     <ul>
                         <li class="animated1 fadeInLeft">
                             开米涤王浓缩多功能中性洗衣液（3蓓）1kg
@@ -153,22 +226,31 @@
                         <li class="animated7 fadeInLeft">
                             开米蔬果清洗剂350g
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
             </div>
-            <div class="product_content hide animated5 fadeInLeft">
-                <div class="img">
+            <div class="product_content hide ">
+                <div class="img animated5 fadeInLeft">
                     <img src="assets/images/A1.png" alt="">
                 </div>
-                <p class="weight">1000g</p>
-                <div class="price">建议零售价 - $89.00</div>
+                <div class="animated5 fadeInLeft">
+                    <p class="weight">1000g</p>
+                    <div class="price">建议零售价 - $89.00</div>
+                </div>
             </div>
         </div>
     </section>
     <script>
         $(function () {
             $('.product_series').on('click', 'li', function () {
-                var that = $(this)
+                var that = $(this);
+                var t = that.attr("ltype");
+
+                $(".product_Minseries h3,.product_Minseries ul").hide();
+
+                $(".product_Minseries h3[ltype='" + t + "']").show().next().show();
+
+
                 that.addClass('active').siblings().removeClass("active");
                 $('.product_Minseries').removeClass('hide')
 

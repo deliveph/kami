@@ -59,7 +59,14 @@
   width: 33%;
   background: white;
   text-align: center;
-  padding-top: 184px; }
+  padding-top: 184px; 
+  overflow: hidden;
+  z-index: -10;
+}
+
+.product_list .product_content .img{
+  overflow: hidden;
+}
 
 .product_list .product_content .img img {
   max-width: 100%;
