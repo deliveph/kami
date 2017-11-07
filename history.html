@@ -23,7 +23,9 @@
 <body>
     <header id="div1">
         <div class="logo">
-            <a href="/"><img src="assets/images/Index/logo.png" /></a>
+            <a href="/">
+                <img src="assets/images/Index/logo.png" />
+            </a>
         </div>
         <div class="menu">
             <ul>
@@ -62,12 +64,12 @@
         </div>
     </header>
     <section class="bubble">
-        <div class="hdiv1" >
+        <div class="hdiv1">
             <img src="assets/images/history/banner_fazhan.png" />
         </div>
     </section>
     <section>
-       
+
         <div class="hdiv2">
             开米，是值得信赖的名族品牌
         </div>
@@ -155,8 +157,7 @@
     </section>
     <section>
         <div class="divimg6" style="margin-top:0px;">
-            <span style="color:#666666;font-size:26px;">你也许</span>
-            <span style="color:#0f7bff;font-size:26px;">喜欢</span>
+            <span style="color:#666666;font-size:26px;">你也许</span><span style="color:#0f7bff;font-size:26px;">喜欢</span>
             <img style="width:28px;margin:-5px 0px;vertical-align:unset;" src="assets/images/Index/xin.png" />
         </div>
         <div class="divimg7">
@@ -397,47 +398,11 @@
 
     window.onload = function () {
 
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">1994&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">1995&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">1996&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">1997&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">1998&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">1999&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2000&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2001&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2002&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2003&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2004&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2005&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2006&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
-        $(".h3right").append(
-            '<li class="swiper-pagination-bullet">2007&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
-        );
+        for (var i = 1994; i <= 2017; i++) {
+            $(".h3right").append(
+                '<li class="swiper-pagination-bullet">' + i +
+                '&nbsp;<img style="vertical-align:unset;" src="assets/images/history/time_sel.png"></li>'
+            );
+        }
     }
 </script>

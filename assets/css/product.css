@@ -36,7 +36,9 @@
   background: rgba(255, 255, 255, 0.85);
   padding-top: 190px;
   font-size: 14px;
-  color: #999; }
+  color: #999; 
+  overflow: hidden;
+}
 
 .product_list .product_Minseries h3 {
   margin-top: 34px;
