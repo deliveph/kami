@@ -10,6 +10,8 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/swiper-3.4.2.min.js"></script>
     <script src="assets/bubble/circleMagic.min.js"></script>
+    <script src="assets/bubble/leftcircleMagic.min.js"></script>
+    <script src="assets/bubble/rightcircleMagic.min.js"></script>
 
     <!-- 动画 -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
@@ -125,8 +127,24 @@
             right: 0px;
         }
 
+        .rebox .releft {
+            height: 100%;
+            width: 300px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
         .about_wrap .banner .message {
-           width:483px;
+            width: 483px;
+        }
+
+        .about_wrap .banner .product_img img {
+            bottom: -190px;
+        }
+
+        .about_wrap .banner .message h3 {
+            margin-top: 35px;
         }
     </style>
 </head>
@@ -256,6 +274,9 @@
                 </div>
             </div>
             <div class="reright">
+
+            </div>
+            <div class="releft">
 
             </div>
         </div>
@@ -402,7 +423,7 @@
                     if (h - top > 300) {
                         $(".about_main").addClass("fadeIn animated")
 
-                        $('.reright').circleMagic1({
+                        $('.reright').leftcircleMagic({
                             elem: '.reright',
                             radius: 100,
                             densety: .01,
@@ -413,6 +434,21 @@
                             top: '0px'
                         });
 
+                        $('.releft').rightcircleMagic({
+                            elem: '.releft',
+                            radius: 100,
+                            densety: .01,
+                            color: '#0040FD',
+                            clearOffset: .5,
+                            direction: 'right',
+                            left: '0px',
+                            top: '0px'
+                        });
+
+
+
+
+                      
                         isshow = 1;
                     }
                 }
