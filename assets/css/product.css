@@ -59,14 +59,12 @@
   width: 33%;
   background: white;
   text-align: center;
-  padding-top: 184px; 
-  overflow: hidden;
-  z-index: -10;
-}
+  padding-top: 184px;
+  overflow: hidden; }
 
-.product_list .product_content .img{
-  overflow: hidden;
-}
+.product_list .product_content .img {
+  max-width: 100%;
+  max-height: 100%; }
 
 .product_list .product_content .img img {
   max-width: 100%;
@@ -193,23 +191,35 @@
     color: #0f7bff;
     margin-left: 60px;
     padding-top: 198px;
-    line-height: 30px; }
+    line-height: 30px;
+    min-width: 166px; }
   .product_warp .product_details_main .img {
     margin: 0 auto;
-    margin-top: 136px;
-    text-align: center; }
-    .product_warp .product_details_main .img img {
-      width: 85%; }
+    margin-top: 190px;
+    text-align: center;
+    width: 51%;
+    min-height: 688px;
+    max-height: 688px; }
+    .product_warp .product_details_main .img .img_row {
+      margin: 0 auto;
+      text-align: center; }
     .product_warp .product_details_main .img p {
       font-size: 18px;
       color: #666;
-      line-height: 30px;
+      line-height: 40px;
       width: 100%;
       margin-top: -56px; }
   .product_warp .product_details_main .msg {
     width: 454px;
-    margin: 198px 180px 0 74px;
-    color: #666; }
+    margin: 198px 6% 0 74px;
+    color: #666;
+    min-height: 688px;
+    max-height: 688px; }
+    .product_warp .product_details_main .msg .msg_main {
+      height: 568px;
+      overflow-y: scroll; }
+      .product_warp .product_details_main .msg .msg_main::-webkit-scrollbar {
+        display: none; }
     .product_warp .product_details_main .msg .title {
       padding-bottom: 12px;
       border-bottom: 1px solid #666; }
@@ -247,7 +257,7 @@
 .product_warp .demonstration {
   display: flex;
   min-width: 1200px;
-  margin-top: 70px; }
+  margin-top: 156px; }
   .product_warp .demonstration .img {
     flex: 1;
     height: 802px; }
@@ -259,7 +269,7 @@
     color: #fff;
     height: 802px;
     background: linear-gradient(to right, #09348b, #0f7bff);
-    width: 456px;
+    width: 28%;
     margin: 0 auto;
     padding: 0 13%; }
     .product_warp .demonstration .right h3 {

@@ -8,6 +8,7 @@
         .message {
             padding: 330px 0px 0 100px;
             max-width: 612px;
+            z-index: 10;
             h1 {
                 font-size: 150px;
                 color: #fff;
@@ -23,6 +24,15 @@
                 color: #fff;
                 line-height: 20px;
             }
+        }
+        .map{
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            text-align: center;
+            top: 150px;
+            visibility: hidden;
         }
     }
     .join_main {

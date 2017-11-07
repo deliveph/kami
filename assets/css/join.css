@@ -6,7 +6,8 @@
   display: flex; }
   .join_warp .banner .message {
     padding: 330px 0px 0 100px;
-    max-width: 612px; }
+    max-width: 612px;
+    z-index: 10; }
     .join_warp .banner .message h1 {
       font-size: 150px;
       color: #fff; }
@@ -19,6 +20,14 @@
       font-size: 14px;
       color: #fff;
       line-height: 20px; }
+  .join_warp .banner .map {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    top: 150px;
+    visibility: hidden; }
 .join_warp .join_main {
   margin-top: 80px; }
   .join_warp .join_main .join_intro {
