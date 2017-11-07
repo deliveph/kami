@@ -166,8 +166,9 @@
         $(function () {
             $('.product_series').on('click', 'li', function () {
                 var that = $(this)
-                that.addClass('active').siblings().removeClass("active")
-                $('.product_Minseries').removeClass('hide')
+                that.addClass('active').siblings().removeClass("active");
+                    $('.product_Minseries').removeClass('hide')
+
             })
             $('.product_list .product_Minseries').on('click', 'li', function () {
                 var that = $(this)
