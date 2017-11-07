@@ -67,7 +67,7 @@
         }
 
         .animated1 {
-            animation-duration: 3s;
+            animation-duration: 1.5s;
         }
     </style>
 </head>
@@ -400,24 +400,24 @@
                 $(".banner").css("visibility", "unset");
                 $(".limg").animate({
                     "left": -w - 400
-                }, 5000, function () {
+                }, 2000, function () {
                     $(".limg").hide();
                 });
-            }, 3000);
+            }, 1500);
 
             setTimeout(function () {
                 $(".message").css("visibility", "unset").addClass("fadeIn").addClass("animated");
-            }, 7000);
+            }, 4500);
 
             setTimeout(function () {
                 $('.bubble').circleMagic({
                     elem: '.bubble',
                     radius: 100,
-                    densety: .005,
+                    densety: .009,
                     color: '#fff',
                     clearOffset: .5
                 });
-            }, 8000)
+            }, 5500)
 
             // setTimeout(function(){
             //     $('.message').css()

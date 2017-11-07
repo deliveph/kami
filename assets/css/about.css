@@ -141,7 +141,7 @@
   background-size: cover; }
 
 .aboutKami_wrap .banner .message {
-  padding: 122px 50px 0;
+  padding: 122px 100px 0;
   padding-top: 122px;
   max-width: 612px; }
 
@@ -181,7 +181,7 @@
     .aboutKami_wrap .aboutKami_main .aboutKami_list.plantScience_list li .main .content p {
       color: #fff; }
   .aboutKami_wrap .aboutKami_main .aboutKami_list ul li {
-    padding: 60px 70px 60px 82px;
+    padding: 60px 70px 60px 100px;
     background: #f5f5f5;
     cursor: pointer; }
     .aboutKami_wrap .aboutKami_main .aboutKami_list ul li.active {
